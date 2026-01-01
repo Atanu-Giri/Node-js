@@ -1,0 +1,52 @@
+<%- include('../partials/head') %>
+
+  </head>
+  <body>
+<%- include('../partials/nav') %>
+
+    <body class="bg-gray-100 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-indigo-600 text-white py-6 shadow-md">
+    <h1 class="text-3xl font-bold text-center">
+      Register Your House
+    </h1>
+    <p class="text-center opacity-90 mt-1">
+      Add your home details to list it on the platform
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-xl mx-auto mt-10 bg-white p-8 rounded-2xl shadow-lg">
+
+    <form action="/host/add-home" method="POST" class="space-y-6">
+
+      <!-- Input Field -->
+      <div>
+        <label class="block font-semibold mb-2">
+          House Name
+        </label>
+
+        <input
+          type="text"
+          name="houseName"
+          placeholder="Enter your house name"
+          required
+          class="w-full p-3 border rounded-lg outline-none
+                 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+        />
+      </div>
+
+      <!-- Submit Button -->
+      <button
+        type="submit"
+        class="w-full py-3 font-semibold rounded-lg
+               bg-indigo-600 
+               hover:bg-indigo-700 active:scale-[.98]
+               transition shadow-md">
+        Submit
+      </button>
+
+    </form>
+    </main>
+    </body>
