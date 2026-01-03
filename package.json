@@ -1,17 +1,25 @@
 {
   "name": "airbnb",
   "version": "1.0.0",
-  "description": "TMKC",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind": "tailwind -i ./views/input.css -o ./public/output.css --watch",
-    "start": "nodemon app.js & npm run tailwind"
+    "tailwind": "tailwindcss -i ./views/input.css -o ./public/output.css --watch",
+    "start": "nodemon app.js && npm run tailwind"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atanu-Giri/Node-js.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Atanu-Giri/Node-js/issues"
+  },
+  "homepage": "https://github.com/Atanu-Giri/Node-js#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
     "ejs": "^3.1.10",
@@ -19,6 +27,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.23",
+    "nodemon": "^3.1.11",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18"
   }
